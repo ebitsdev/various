@@ -1,0 +1,135 @@
+body{
+margin: 0;
+padding: 0;
+border: 0;
+overflow: auto;
+height: 100%;
+max-height: 100%;
+}
+
+#main-content{
+position: fixed;
+top: 173px;
+bottom: 0;
+left: 275px;
+width: 79.6%; /*Width of frame div*/
+height: 100%;
+overflow: auto; /*Disable scrollbars. Set to "scroll" to enable*/
+background: #161616;
+color: #969696;
+border-style: dotted; border-width: 1px 0px 0px 0px; border-radius: 0px;
+padding: 4px;
+}
+#main-content a:link {color:#ffffff;}      /* unvisited link */
+    a:visited {color:white;}  /* visited link */
+    a:hover {color:#6EBAE2;}  /* mouse over link */
+    a:active {color:white;}  /* selected link */
+
+
+.table-of-contents{
+position: fixed;
+top: 0px;
+left: 0; /*Set left value to WidthOfFrameDiv*/
+right: 0;
+bottom: 0;
+width: 265px;
+padding: 0.25em;
+overflow: hidden;
+background: #3366cc;
+ border-style: dotted; border-width: 0px 1px 0px 0px; /* border-radius: 6px; */
+
+   text-shadow: 0 0.07em 0 rgba(0, 0, 0, 0.4); /* 0.2 here is relative to the text shadow */
+}
+
+.tocli a:link {color:#ffffff;}      /* unvisited link */
+    a:visited {color:white;}  /* visited link */
+    a:hover {color:#6EBAE2;}  /* mouse over link */
+    a:active {color:white;}  /* selected link */
+
+
+p img {
+   border:0.07em dotted #021a40; border-radius:4px;
+   float:center; padding: 6px;
+
+}
+
+.table-of-contents ul {
+    padding: 0;
+	/*	border-radius: 15px 15px 15px 15px; /* * this is a box with round radius
+	box-shadow: 0 0 10px #629996; */
+}
+.table-of-contents li {
+/*    margin: 0 0 0 0;*/
+	    border-bottom: 0.01em dashed #ffffff; /* Very fine, slim border set at 0.01 percent for of the overall parent border width */
+	    font-size: 13px;
+	    line-height: 14px;
+	    margin-bottom: 3px;
+	    text-align: left;
+	  /*  transition: all 0.3s ease-out 0s;*/
+
+}
+.table-of-contents a {
+    text-decoration: none;
+}
+.table-of-contents a:hover,
+.table-of-contents a:active {
+    text-decoration: underline;
+}
+h1:target {
+    animation: highlight 2s ease;
+}
+
+@keyframes highlight {
+    from { background: yellow; }
+    to { background: white; }
+}
+
+
+#header             {   background: #3366cc; position: fixed;
+						top: 0px;
+						width: 79.8%;
+						height: 163px;
+                        padding: 4px;
+						border-style: dotted; border-width: 0px 0px 1px 0px; border-radius: 0px;
+						left: 275px;
+                        clear: both;
+                        color:#ffffff;
+
+
+                        }
+
+
+.headerOne
+						{
+							/* small {line-height:50%;} */
+						}
+
+					    #no-display, hr    {
+					                        display:none;
+					                        }
+
+
+           h1, h2 {
+                font-family:"Baskerville", Palatino, Calibri;
+            }
+            p{font-family:"Segoe UI", Baskerville, "PT serif"; font-size:18px; line-height:20px;}
+        ul{font-family:"Palatino", "PT Serif", Baskerville, "Segoe UI";}
+            pre{
+                font-family:"Courier", Arial, "Arial Narrow"; font-size:13px;
+                background-color:#006688;
+                border-style:dashed;
+                border-color:yellow;
+                border-radius:0px;
+                border-width:0.068em;
+        		padding: 4px;
+            }
+
+        dt{font-family:"Garamond", Times, "Times New Roman";}
+            dd,ol{font-family:"Bookman Old Style", "Segoe UI"; font-style:italic; font-size:12px;}
+            a{font-family:"Calibri", "Segoe UI"; font-size:13.5px;}
+        h1 { font-size: 2em; }
+         h2 { font-size: 1.5em; }
+         h3 { font-size: 1.2em ; }
+         h4 { font-size: 1.0em; }
+         h5 { font-size: 0.9em; }
+         h6 { font-size: 0.8em; }
