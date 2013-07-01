@@ -2,8 +2,8 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
     
-    <!-- This adds 
-        DOCTYPE declaration -->
+    <!-- This adds DOCTYPE declaration -->
+    <!--Another comment to test git -->
     <xsl:output method="xml" doctype-public="-//OASIS//DTD DITA Glossary//EN"
         doctype-system="glossary.dtd" omit-xml-declaration="yes" indent="yes"/>
     
