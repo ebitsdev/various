@@ -4,7 +4,9 @@
     
     <!-- This adds DOCTYPE declaration -->
     <!--Another comment to test git .... -->
-    <!-- Git finally worked by removing the existing RSA key folder and regenerating from the command line -->
+    <!-- Git finally worked by removing the existing RSA key folder and regenerating from the command line 
+    I followed the instructions on github: https://help.github.com/articles/generating-ssh-keys
+    -->
     <xsl:output method="xml" doctype-public="-//OASIS//DTD DITA Glossary//EN"
         doctype-system="glossary.dtd" omit-xml-declaration="yes" indent="yes"/>
     
