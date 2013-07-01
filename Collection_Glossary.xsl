@@ -3,7 +3,7 @@
     xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/">
     
     <!-- This adds DOCTYPE declaration -->
-    <!--Another comment to test git -->
+    <!--Another comment to test git .... -->
     <xsl:output method="xml" doctype-public="-//OASIS//DTD DITA Glossary//EN"
         doctype-system="glossary.dtd" omit-xml-declaration="yes" indent="yes"/>
     
