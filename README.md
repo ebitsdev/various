@@ -9,4 +9,6 @@ The project will include sample codes for XSLT, HTML5, JavaScript and XML...
 
 It is a learning in process.
 
+Successfully configured SVN from oXYgen XML Editor.
+
 Thanks.
