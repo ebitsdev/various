@@ -1,8 +1,31 @@
-body{
+body, .title.topictitle2 {
     width:100%;
     margin-top:0;
-    margin-left:0;
+    margin-left:.3em;
+    font-family:"news cycle", helvetica, sans-serif;
+    font-size: .95em;
+   
+ }
+
+    
+ /*   .title.topictitle2 {
+    text-transform:capitalize;
+    }*/
+
+/*.title.topictitle2 {
+    text-transform:lowercase;
+    }*/
+#container {
+    
+    position:fixed;
+    top:2.25em;
+    text-transform:capitalize;
+    background: #c65;
+    width: 100%;
+    /*overflow:inherit;*/
+    z-index: 1;
 }
+
 .sectiontitle{
 
     margin:0;
@@ -10,7 +33,10 @@ body{
     background:#194879;
     height:2.25em;
     list-style:none;
-    width:auto;
+    
+    z-index: 2;
+    
+  /*  position:fixed;*/
 }
 
 .sectiontitle > li{ /* We target only the list element inside ul.sectiontitle class*/
@@ -26,7 +52,7 @@ body{
     float:left;
     height:100%;
     color:white;
-    font-family:arial, helvetica, sans-serif;
+    font-family:"news cycle", helvetica, sans-serif;
     font-size:.9em;
     text-decoration:none;
     line-height:2;
@@ -51,6 +77,8 @@ ul.section{
 
     position:relative;
     left:-1.12em;
+    
+    z-index: 3;
 }
 
 /*We hide our submenu .section and avoid using display:none for accessibility requirements*/
@@ -116,3 +144,32 @@ ul.section li a:hover{
     top:.47em;
 
 }
+
+/* Trying to hide the dropdown menu after click*/
+.section li a:focus + ul ul li{
+    display:none;
+    
+}
+
+.note.note,
+code  {font-family: "news cycle", calibri, courier, monaco, monospace;
+       font-size: .91em;
+       color: #194879; /* likewise the background-color comment */
+       /*background:#bed2b9;*/
+       border-top: solid #cccccc .05em;
+       border-bottom: solid #cccccc .05em;
+       -moz-border-radius: .019em;
+       -webkit-border-radius: 1em;
+       
+       padding: .04em;
+       
+     
+       }
+       
+       .note.note > .notetitle{
+           font-family:"news cycle";
+           text-transform:capitalize;
+           color:#223380;
+           font-style:italic;
+           font-size:1em;
+       }
