@@ -1,9 +1,10 @@
 body, .title.topictitle2 {
-    width:100%;
+    width:auto;
     margin-top:0;
     margin-left:.3em;
     font-family:"news cycle", helvetica, sans-serif;
     font-size: .95em;
+    height:auto;
    
  }
 
@@ -173,3 +174,29 @@ code  {font-family: "news cycle", calibri, courier, monaco, monospace;
            font-style:italic;
            font-size:1em;
        }
+       
+       /* Style tables*/
+       
+       .thead{
+           
+           background:#0080FF;
+           color:#fff;
+       }
+       
+       table, th, td
+{
+border: .04em solid #0080ff;
+} 
+/*Table title*/
+.tablecap{
+    
+    font-style:italic;
+    font-family: oxygen;
+    font-weight:bold;
+}
+/* will further explore this for table header content
+.table .tbody .row {
+    
+    color:blue;
+    
+}*/
