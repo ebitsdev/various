@@ -1,0 +1,50 @@
+/*
+ * Customization for JPAMS by Emmauel Bamba
+ * 
+ */
+a[gloss-title]:link, a[gloss-title]:visited {
+	cursor:context-menu;
+	position: relative;
+	text-decoration: none;
+	color:blue;
+	border-bottom: dotted 0.12em;
+}
+
+a[gloss-title]:after {
+  content: attr(gloss-title);
+  position: absolute;
+  font-family:arial, helvetica, sans-serif;
+  font-size:75%;
+  color: #fff;
+  top: 1.4em;
+  left: -26px;
+  background:#194879;
+  border:1px solid #fff;
+  padding: 6px 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+   width:250px;
+  white-space: pre-line;
+  visibility: hidden;
+}
+
+a[gloss-title]:hover:before, a[gloss-title]:hover:after {
+cursor:context-menu;
+  visibility: visible;
+  cursor:default;
+  -webkit-transition: visibility 0s linear .3s;
+  -moz-transition: visibility 0s linear .3s;
+  -o-transition: visibility 0s linear .3s;
+  transition: visibility 0s linear .3s;  
+ 
+}
+/*End of customization Emmanuel Bamba for JPAMS*/
+
+ul.myterms{
+    cursor:context-menu;
+    position: fixed;
+    margin-left:0;
+    top:0;
+    
+}

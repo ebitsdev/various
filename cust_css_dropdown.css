@@ -1,3 +1,4 @@
+@import "hover_gloss_title.css";
 body, .title.topictitle2 {
     width:auto;
     margin-top:0;
@@ -157,8 +158,8 @@ code  {font-family: "news cycle", calibri, courier, monaco, monospace;
        font-size: .91em;
        color: #194879; /* likewise the background-color comment */
        /*background:#bed2b9;*/
-       border-top: solid #cccccc .05em;
-       border-bottom: solid #cccccc .05em;
+     /*  border-top: solid #cccccc .05em;
+       border-bottom: solid #cccccc .05em;*/
        -moz-border-radius: .019em;
        -webkit-border-radius: 1em;
        
