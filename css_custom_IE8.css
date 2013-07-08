@@ -1,0 +1,47 @@
+ul {
+/*  font-family: Arial, Verdana;
+  font-size: 14px;*/
+  margin: 0 1em 0 0 ;
+  padding: 0 1em 0 0;
+  list-style: none;
+ }
+.sectiontitle > li { /* used the child selector here to properly target your first level menu items */
+  position: relative;
+  float: left;
+  background: #194879;
+  padding: .20em .35em .20em 1em ;
+  width:227px;
+  white-space:nowrap;
+  height:2em
+  
+} /* dummy comment */
+.sectiontitle li .section {
+    display: none;
+    position: absolute; /* moved the positioning to the main declaration instead */
+    left:0; /* fixed this property, there is no left:none as you had it before */
+    top:100%;
+    
+}
+
+.sectiontitle a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  border-top: 1px solid #194879;
+  padding: 5px 15px 5px 15px;
+  background: #2C5463;
+  margin-left: 1px;
+  white-space: nowrap;
+}
+.sectiontitle li a:hover { background: #617F8A; }
+
+.sectiontitle li:hover .section {
+  display: block;
+  padding: 0 ;
+}
+
+.sectiontitle li:hover li {
+  font-size: 11px;
+}
+.sectiontitle li:hover a { background: #617F8A; }
+.sectiontitle li:hover li a:hover { background: #95A9B1; }
