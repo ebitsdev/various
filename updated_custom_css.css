@@ -1,0 +1,201 @@
+@import "hover_gloss_title.css";
+body, .title.topictitle2 {
+    width:auto;
+    margin-top:0;
+    margin-left:.3em;
+    font-family:arial, helvetica, sans-serif;
+    font-size: .95em;
+    height:auto;
+   
+ }
+/*New addition*/
+.header {
+    
+    background: #194879;
+    top:0;
+    left:0;
+    height: 2.25em;
+    width:100%;
+    z-index: 2;
+    position: fixed;
+}    
+
+.container { /*changed container from ID selection to class selector*/
+    
+    position:relative;
+    top:1.1em;
+    /*background: rgba(160,160,160, .051);*/
+    width: 100%;
+    overflow:auto;
+    z-index: 1;
+}
+
+.sectiontitle{
+
+    margin:0;
+    padding:0 1em;
+    background:#194879;
+    height:2.23em;
+    list-style:none;
+    
+    z-index: 3;
+    
+  /*  position:fixed;*/
+}
+
+.sectiontitle > li{ /* We target only the list element inside ul.sectiontitle class*/
+
+    float:left;
+    height:100%;
+    margin-right:0; /*To control how far apart from the right each <li> should be positioned from the other*/
+    padding:0 .02em;
+}
+
+.sectiontitle > li{
+
+    float:left;
+    height:100%;
+    color:white;
+    font-family:arial, helvetica, sans-serif;
+    font-size:.9em;
+    text-decoration:none;
+    line-height:2;
+    text-transform:capitalize;
+    /* border-right: solid white .03em;*/
+}
+
+ul.sectiontitle li:hover{
+    color:orange;
+    border-bottom:.1em dotted #224480;
+    /*  text-decoration:underline; */
+}
+
+/* Contextual positioning for the children under the .sectiontitle list items*/
+
+ul.section{
+
+    position:relative;
+    left:-1.12em;
+    
+    z-index: 4;
+}
+
+/*We hide our submenu .section and avoid using display:none for accessibility requirements*/
+ul.section{
+
+    /*  width:10em;*/
+    margin:0 0 0;
+    padding:0 0 0;
+    list-style:none;
+    background:#194879;
+    position:relative; /*Very important to keep the children ul.section aligned with its parent ul.sectiontitle*/
+    top:-1000em;
+
+    /*    The below needs to be clarified*/
+    -webkit-transiton:opacity 0.2s;
+    -moz-transition:opacity 0.2s;
+    -ms-transition:opacity 0.2s;
+    -o-transition:opacity 0.2s;
+    -transition:opacity 0.2s;
+    /*    End of comment*/
+}
+ul.section:first-child:hover{
+    border-top: 0.01em dotted #224480;
+}
+
+ul.section:last-child:hover{
+    border-bottom:none;
+}
+
+ul.section{
+    width:auto; /* dropdown list width better when set to auto*/
+    margin:0 auto 0.3em auto;
+    white-space:inherit;
+    border: solid #224480 0.01em;
+}
+
+ul.section li a{
+
+    height:100%;
+    display:block;
+    padding:0.3em 1em 0;  /*Set padding around the text in the list items under ul.section elements*/
+    color:#fff;
+    /*font-weight:bold;*/
+    text-decoration:none;
+    /*    The below needs to be clarified*/
+    -webkit-transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -ms-transition:all 0.2s;
+    -o-transition:all 0.2s;
+    transition:all 0.2s;
+    /* End of comment*/
+    
+   
+}
+
+ul.section li a:hover{
+    background:rgba(116,170,231, 0.9);
+    /*text-decoration:underline;*/
+}
+
+/* This controls the position of the child ul.section from the top horizontal bar*/
+.sectiontitle > li:hover ul.section{
+    top:.47em;
+
+}
+
+/* Trying to hide the dropdown menu after click*/
+.section li a:focus + ul ul li{
+    display:none;
+    
+}
+
+.note.note,
+code  {font-family: helvetica,arial, calibri, courier, monaco, monospace;
+       font-size: .91em;
+      /* color: #194879; *//* likewise the background-color comment */
+       color:rgba(160,160,160, 0.8); /*changed value*/
+     /*  border-top: solid #cccccc .05em;
+       border-bottom: solid #cccccc .05em;*/
+       -moz-border-radius: .019em;
+       -webkit-border-radius: 1em;
+       
+       padding: .04em;
+       
+     
+       }
+       
+       .note.note > .notetitle{
+           font-family:helvetica,arial;
+           text-transform:capitalize;
+           color:rgba(0,0,0, 0.9);/*Changed value*/
+           border-bottom: solid .1em #0e1115;
+           font-style:italic;
+           font-size:1em;
+       }
+       
+       /* Style tables*/
+       
+       .thead{
+           
+           background:#0080FF;
+           color:#fff;
+       }
+       
+       table, th, td
+{
+border: .04em solid #0080ff;
+} 
+/*Table title*/
+.tablecap{
+    
+    font-style:italic;
+    font-family: arial;
+    font-weight:bold;
+}
+/* will further explore this for table header content
+.table .tbody .row {
+    
+    color:blue;
+    
+}*/
